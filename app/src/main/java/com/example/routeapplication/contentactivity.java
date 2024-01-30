@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +23,7 @@ public class contentactivity extends AppCompatActivity {
         int resId = getResources().getIdentifier(img,"drawable",this.getPackageName());
         imageView.setImageResource(resId);
         textview.setText(txt);
+        Log.e("TAG", "onCreate: ");
 
     }
 }
