@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2dedf"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/anidroidimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent=".25"
+        android:src="@drawable/android"
+        />
+
+    <Button
+        android:id="@+id/androidbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onbtn"
+        android:text="ANDROID COURSE"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anidroidimageview" />
+    <ImageView
+        android:id="@+id/iosimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/androidbtn"
+        app:layout_constraintHeight_percent=".25"
+        android:src="@drawable/ios"
+        />
+
+    <Button
+        android:id="@+id/iosbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onbtn"
+        android:text="IOS COURSE"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iosimageview" />
+    <ImageView
+        android:id="@+id/Fstackimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iosbtn"
+        app:layout_constraintHeight_percent=".25"
+        android:src="@drawable/fullstack"
+        />
+
+    <Button
+        android:id="@+id/fstackbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onbtn"
+        android:text="FULL STACK COURSE"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Fstackimageview" />
+</androidx.constraintlayout.widget.ConstraintLayout>
